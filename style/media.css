@@ -1,0 +1,23 @@
+@media screen and (max-width: 1000px) {
+    body {
+        height: 100%;
+    }
+
+    .register__btn {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .type {
+        flex-direction: column;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+}

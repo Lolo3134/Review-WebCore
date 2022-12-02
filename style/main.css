@@ -1,302 +1,351 @@
+@import "media.css";
+
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 *, *:before, *:after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: 'Barlow', sans-serif;
-  font-weight: normal;
-  background: #EFF6FF;
-  color: #2A4A5C;
-  font-size: 1rem;
-  height: 100vh;
+    font-family: 'Barlow', sans-serif;
+    font-weight: normal;
+    background: #EFF6FF;
+    color: #2A4A5C;
+    font-size: 1rem;
+    height: 100vh;
 }
 
 .wrapper {
-  width: 100%;
-  display: flex;
-  padding: 4rem 2.5rem;
-  height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 5%;
+    height: 100%;
 }
 
 section {
-  flex: 1;
+    flex: 1;
 }
 
 .bg {
-  background-image: url("img/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .logo {
-  margin: 5% 0 0 5%;
-  min-width: 15%;
-  max-width: 20%;
+    margin: 5% 0 0 5%;
+    min-width: 15%;
+    max-width: 20%;
 }
 
 .register {
-  background: #FFFFFF;
+    background: #FFFFFF;
 }
 
 .register--wrapper {
-  margin: 5% 5%;
+    margin: 5% 5%;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 600;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 h1 + p {
-  font-size: 1.25rem;
-  margin: 1.25rem 0 3.125rem;
-  color: #7B8A92;
+    font-size: 1.25rem;
+    margin: 1.25rem 0 3.125rem;
+    color: #7B8A92;
 }
 
 .register__btn {
-  display: flex;
-  justify-content: space-between;
-  gap: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
 }
 
 .register__btn > button {
-  display: flex;
-  width: 100%;
-  border: none;
-  padding: 0.9375rem;
-  align-items: center;
-  gap: 1.25rem;
-  color: #FFFFFF;
-  font-family: 'Barlow', sans-serif;
-  cursor: pointer;
+    display: flex;
+    width: 100%;
+    border: none;
+    padding: 0.9375rem;
+    align-items: center;
+    gap: 1.25rem;
+    color: #FFFFFF;
+    font-family: 'Barlow', sans-serif;
+    cursor: pointer;
 }
 
 .register__btn > button > span {
-  width: 1.25rem;
-  height: 1.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 {
-  color: #3698FB;
-  color: #7B8A92;
-  color: #96A5B1;
-  color: #AFAFAF;
-  color: #EEEEEE;
-  color: #FFFFFF;
+    color: #3698FB
+;
+    color: #7B8A92
+;
+    color: #96A5B1
+;
+    color: #AFAFAF
+;
+    color: #EEEEEE
+;
+    color: #FFFFFF
+;
 }
 
 .register__btn > button:first-of-type {
-  background: #255A9B;
-  padding-left: 0.625rem;
+    background: #255A9B;
+    padding-left: 0.625rem;
 }
 
 .register__btn > button:last-of-type {
-  background: #0076B6;
+    background: #0076B6;
 }
 
 .register__line {
-  overflow: hidden;
-  text-align: center;
-  font-size: 0.75rem;
-  margin: 3rem 0;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.75rem;
+    margin: 3rem 0;
 }
 
 .register__line span {
-  display: inline-block;
-  vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
+
 .register__line:before,
 .register__line:after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  width: 20%;
-  height: 0.0625rem;
-  background-color: #EEEEEE;
-  position: relative;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    height: 0.0625rem;
+    background-color: #EEEEEE;
+    position: relative;
 }
+
 .register__line:before {
-  margin-left: -100%;
-  left: -0.625rem;
+    margin-left: -100%;
+    left: -0.625rem;
 }
+
 .register__line:after {
-  margin-right: -100%;
-  right: -0.625rem;
+    margin-right: -100%;
+    right: -0.625rem;
 }
 
 .contacts {
-  display: flex;
-  gap: 2.5rem;
-  margin-bottom: 3.125rem;
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 3.125rem;
 }
 
 .contacts--wrapper {
-  margin-bottom: 1rem;
-  flex: 1;
-  position: relative;
+    margin-bottom: 1rem;
+    flex: 1;
+    position: relative;
 }
 
 .contacts__label {
-  display: block;
-  margin-bottom: 0.25rem;
+    display: block;
+    margin-bottom: 0.25rem;
 }
 
 .contacts__input {
-  display: block;
-  width: 100%;
-  height: 2.25rem;
-  padding: 0.375rem 0.75rem;
-  font-family: inherit;
-  font-size: 1rem;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #EEEEEE;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+    display: block;
+    width: 100%;
+    height: 2.25rem;
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #EEEEEE;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 
 .contacts__input:focus {
-  color: #212529;
-  background-color: #fff;
-  border-color: #EEEEEE;
-  outline: 0;
-  border-left: 1px solid #3698FB;
+    color: #212529;
+    background-color: #fff;
+    border-color: #EEEEEE;
+    outline: 0;
+    border-left: 1px solid #3698FB;
 }
 
 .contacts--wrapper .contacts__input {
-  height: 3.5rem;
-  line-height: 1.25;
-  padding: 1rem 0.75rem;
+    height: 3.5rem;
+    line-height: 1.25;
+    padding: 1rem 0.75rem;
 }
 
 .contacts--wrapper .contacts__label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  padding: 1rem .75rem;
-  pointer-events: none;
-  transform-origin: 0 0;
-  transition: opacity .15s ease-in-out, transform .15s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem .75rem;
+    pointer-events: none;
+    transform-origin: 0 0;
+    transition: opacity .15s ease-in-out, transform .15s ease-in-out;
 }
 
 .contacts--wrapper .contacts__input::-moz-placeholder {
-  color: transparent;
+    color: transparent;
 }
 
 .contacts--wrapper .contacts__input::placeholder {
-  color: transparent;
+    color: transparent;
 }
 
-.contacts--wrapper .contacts__input:focus {
-  padding-top: 1.625rem;
-  padding-bottom: .625rem;
+.contacts--wrapper .contacts__input:focus, .contacts--wrapper .contacts__input:not(:placeholder-shown) {
+    padding-top: 1.625rem;
+    padding-bottom: 0.625rem;
 }
 
-.contacts--wrapper .contacts__input:focus~.contacts__label {
-  opacity: .65;
-  transform: scale(.85) translateY(-.75rem) translateX(.15rem);
+.contacts--wrapper .contacts__input:focus ~ .contacts__label, .contacts--wrapper .contacts__input:not(:placeholder-shown) ~ .contacts__label {
+    opacity: 0.65;
+    transform: scale(.85) translateY(-.75rem) translateX(.15rem);
 }
 
 h2 {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 h2 + p {
-  font-size: 1rem;
-  margin: 0.875rem 0 1.5rem;
-  color: #7B8A92;
+    font-size: 1rem;
+    margin: 0.875rem 0 1.5rem;
+    color: #7B8A92;
 }
 
-/*.type {*/
-/*  display: flex;*/
-/*  justify-content: space-evenly;*/
-/*}*/
+.type {
+    display: flex;
+}
 
-.type__input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
+.type--wrapper {
+    display: flex;
+    align-items: flex-end;
 }
 
 .type__input + label {
-  display: inline-flex;
-  align-items: center;
-  user-select: none;
-  margin-right: 1.5rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.type__icon {
+    margin-right: 3.125rem;
+}
+
+.type__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #AFAFAF;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 0.3125rem;
+    position: relative;
+}
+
+.type__input:checked {
+    border: 4px solid #3698FB;
 }
 
 .type__description {
-  margin-left: 0.625rem;
+    max-width: 18.75rem;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0 0 20px 3px rgba(34, 60, 80, 0.07);
+    -moz-box-shadow: 0 0 20px 3px rgba(34, 60, 80, 0.07);
+    box-shadow: 0 0 20px 3px rgba(34, 60, 80, 0.07);
+    padding: 0.625rem;
+    margin: 20px 0;
+    color: #AFAFAF;
 }
 
-.type__input+label::before {
-  content: '';
-  display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  flex-shrink: 0;
-  flex-grow: 0;
-  border: 2px solid #EEE;
-  border-radius: 50%;
-  margin-right: 0.5rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50% 50%;
+.agree {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #AFAFAF;
 }
 
-.type__input:not(:disabled):not(:checked)+label:hover::before {
-  border-color: #AFAFAF;
+.agree > input[id='agree'] {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
 }
 
-.type__input:checked+label::before {
-  border: none;
-  width: 1rem;
-  height: 1rem;
-  background-image: url("img/radio.svg");
-  background-size: contain;
-  background-position: center;
+.agree > a {
+    color: #3698FB;
+    display: contents;
+    text-decoration: underline;
 }
 
+.register__form > button {
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.75rem 4rem;
+    border-radius: 0.25rem;
+    background: #3698FB;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+}
+
+.register__form > button:hover {
+    color: #3698FB;
+    background: transparent;
+    outline: 3px solid #3698FB;
+}
 
 @font-face {
-  font-family: 'Barlow';
-  src: url('./fonts/Barlow-SemiBold.eot');
-  src: local('Barlow SemiBold'), local('Barlow-SemiBold'),
-  url('./fonts/Barlow-SemiBold.eot?#iefix') format('embedded-opentype'),
-  url('./fonts/Barlow-SemiBold.woff2') format('woff2'),
-  url('./fonts/Barlow-SemiBold.woff') format('woff'),
-  url('./fonts/Barlow-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
+    font-family: 'Barlow';
+    src: url('./fonts/Barlow-SemiBold.eot');
+    src: local('Barlow SemiBold'), local('Barlow-SemiBold'),
+    url('./fonts/Barlow-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Barlow-SemiBold.woff2') format('woff2'),
+    url('./fonts/Barlow-SemiBold.woff') format('woff'),
+    url('./fonts/Barlow-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
 }
+
 @font-face {
-  font-family: 'Barlow';
-  src: url('./fonts/Barlow-Regular.eot');
-  src: local('Barlow Regular'), local('Barlow-Regular'),
-  url('./fonts/Barlow-Regular.eot?#iefix') format('embedded-opentype'),
-  url('./fonts/Barlow-Regular.woff2') format('woff2'),
-  url('./fonts/Barlow-Regular.woff') format('woff'),
-  url('./fonts/Barlow-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Barlow';
+    src: url('./fonts/Barlow-Regular.eot');
+    src: local('Barlow Regular'), local('Barlow-Regular'),
+    url('./fonts/Barlow-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Barlow-Regular.woff2') format('woff2'),
+    url('./fonts/Barlow-Regular.woff') format('woff'),
+    url('./fonts/Barlow-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
-  font-family: 'Barlow';
-  src: url('./fonts/Barlow-ExtraLight.eot');
-  src: local('Barlow ExtraLight'), local('Barlow-ExtraLight'),
-  url('./fonts/Barlow-ExtraLight.eot?#iefix') format('embedded-opentype'),
-  url('./fonts/Barlow-ExtraLight.woff2') format('woff2'),
-  url('./fonts/Barlow-ExtraLight.woff') format('woff'),
-  url('./fonts/Barlow-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
+    font-family: 'Barlow';
+    src: url('./fonts/Barlow-ExtraLight.eot');
+    src: local('Barlow ExtraLight'), local('Barlow-ExtraLight'),
+    url('./fonts/Barlow-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Barlow-ExtraLight.woff2') format('woff2'),
+    url('./fonts/Barlow-ExtraLight.woff') format('woff'),
+    url('./fonts/Barlow-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
 }
