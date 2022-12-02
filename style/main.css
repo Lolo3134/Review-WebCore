@@ -89,21 +89,6 @@ h1 + p {
     height: 1.25rem;
 }
 
-{
-    color: #3698FB
-;
-    color: #7B8A92
-;
-    color: #96A5B1
-;
-    color: #AFAFAF
-;
-    color: #EEEEEE
-;
-    color: #FFFFFF
-;
-}
-
 .register__btn > button:first-of-type {
     background: #255A9B;
     padding-left: 0.625rem;
